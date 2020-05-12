@@ -7,7 +7,7 @@
 #
 # ---------------------------------------------------------------------------- #
 #  Histórico:
-#   v1.1 11/5/2020 (Começou a funcionar)
+#   v1.3 11/5/2020 (Começou a funcionar)
 #  Testado em:
 #   bash 4.4.20(1)
 
@@ -17,6 +17,7 @@ CIANO="\033[36;1m"
 VAR1=0
 VAR2=0
 VAR3=0
+VAR4=0
 # ------------------------------- EXECUÇÃO ------------------------------- #
 #######PDF######
 for i in $(find /home/gio/Downloads -maxdepth 1 -name *.pdf);
@@ -52,3 +53,15 @@ done
 find /home/gio/Downloads -name *.mp4 -exec mv {} /home/gio/Vídeos \;
 
 echo -e ${VERMELHO} Arquivos .mp4 Movidos: ${CIANO}$VAR3
+
+#---------------------------------JPG----------------------------------------#
+
+for i in $(find /home/gio/Downloads -maxdepth 1 -name *.jpg);
+do
+
+    let VAR4=VAR4+1
+done
+
+find /home/gio/Downloads -name *.jpg -exec mv {} /home/gio/Imagens \;
+
+echo -e ${VERMELHO} Arquivos .jpg Movidos: ${CIANO}$VAR3
