@@ -18,6 +18,7 @@ VAR1=0
 VAR2=0
 VAR3=0
 VAR4=0
+VAR5=0
 # ------------------------------- EXECUÇÃO ---------------------------------#
 
 #-----------------------------------PDF-------------------------------------#
@@ -66,4 +67,16 @@ done
 
 find /home/gio/Downloads -name *.jpg -exec mv {} /home/gio/Imagens \;
 
-echo -e ${VERMELHO} Arquivos .jpg Movidos: ${CIANO}$VAR3
+echo -e ${VERMELHO} Arquivos .jpg Movidos: ${CIANO}$VAR4
+
+#---------------------------------PNG----------------------------------------#
+
+for i in $(find /home/gio/Downloads -maxdepth 1 -name *.png);
+do
+
+    let VAR5=VAR5+1
+done
+
+find /home/gio/Downloads -name *.png -exec mv {} /home/gio/Imagens \;
+
+echo -e ${VERMELHO} Arquivos .jpg Movidos: ${CIANO}$VAR5
