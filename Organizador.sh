@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# |Organizaap automatica da pasta de Downloads
+# |Organizaap automatica do diretório de Downloads
 #
 #  Email:      paulogcsouza86@hotmail.com
 #  Autor:      Paulo Souza                 Manutenção: Paulo Souza
@@ -8,7 +8,6 @@
 # ------------------------------------------------------------------------ #
 #  Histórico:
 #   v1.3 11/5/2020 (Começou a funcionar)
-#   v1.5 14/5/2020
 #   v1.6 120/5/2020
 #  Testado em:
 #   bash 4.4.20(1)
