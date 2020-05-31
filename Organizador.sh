@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Organizaap automatica do diretório de Downloads
+# Organizador automatica do diretório de Downloads
 #
 #  Email:      paulogcsouza86@hotmail.com
 #  Autor:      Paulo Souza                 Manutenção: Paulo Souza
