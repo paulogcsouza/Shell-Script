@@ -8,7 +8,7 @@
 # -------------------------------------------------------------------------#
 #  Histórico:
 #   v1.0 30/5/2020 (Começou a funcionar)
-#   v1.1 1/6/2020  (melhorias no funcionamento e novas funções add)
+#   v1.2 1/6/2020  (melhorias no funcionamento e novas funções add)
 #  Testado em:
 #   bash 4.4.20(1)
 
@@ -23,13 +23,13 @@ test "$RESPOSTA0" != "s" && exit
 
 # --------------------------------EXECUÇÂO-------------------------------- #
 echo -e "$CIANO Data e horário local:"
-date
+date                                      #data local
 echo
 echo -e "$VERMELHO Uso do disco:"
-df -h
+df -h                                    #Uso da memória
 echo
 echo -e "$CINZA Usuários conectados:"
-w
+w                                        #Usuários logados
 echo
 
 # ---------------------------------TESTE---------------------------------- #
@@ -37,4 +37,4 @@ echo
 echo -e "Gostaria de Informações complementares Sobre o Hardware [s/n]"
 read RESPOSTA1
 test "$RESPOSTA1" != "s" && echo -e "$AMARELO Tenha um bom dia !!!" && exit
-lscpu
+lscpu | lscpu | sed -n '1,24p' # lista apenas as 24 primeiras linhs (Que são as relevantes para essa função )
