@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 #
-# Arquivos de Configuração
+# Calculadora operações básica com ponto flutuante
 #
 #  Email:      paulogcsouza86@hotmail.com
 #  Autor:      Paulo Souza                 Manutenção: Paulo Souza
 #
 #-------------------------------------------------------------------------------#
 #  Histórico:
-#   v1.0 3/4/2020 (Começou a funcionar)
+#   v1.0 4/4/2020 (Começou a funcionar com ponto Flutuante)
 #
 #  Testado em:
 #   bash 4.4.20(1)
