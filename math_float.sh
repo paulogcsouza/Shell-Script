@@ -20,18 +20,21 @@ A2=0
 # -------------------------------Interação Usuário----------------------------- #
 
 echo "Por favor, digite o primeiro número:";  # Exibe a frase na tela
-read A1  # Armazena o primeiro número digitado pelo usuário na variável 'numero1'
+read A1  # Armazena o primeiro número digitado pelo usuário na variável 'A1'
 
 echo "Por favor, digite o segundo número:";  # Exibe a frase na tela
-read A2  # Armazena o segundo número digitado pelo usuário na variável 'numero2'
+read A2  # Armazena o segundo número digitado pelo usuário na variável 'A2'
 
 
+# --------------------------------MENU DE SELECAO------------------------------ #
 
-echo "Por favor, selecione a operação matemática:";  # Exibe a frase na tela
+echo "Por favor, selecione a operação matemática:";  # 
 echo "[1] Soma   [2] Subtração   [3] Multiplicação   [4] Divisão:"
 read operacao
 echo "--------------------------------------------------------------------------"
+
 # -----------------------------------EXECUÇÃO-----------------------------------#
+
 if [ $operacao = "1" ]; then
   echo "O resultado da Adição é:"
   echo "scale=5 ; $A1 + $A2" | bc
