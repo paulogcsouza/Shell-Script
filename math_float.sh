@@ -19,11 +19,11 @@ A2=0
 
 # -------------------------------Interação Usuário----------------------------- #
 
-echo "Por favor, digite o primeiro número:";  # Exibe a frase na tela
-read A1  # Armazena o primeiro número digitado pelo usuário na variável 'A1'
+echo "Por favor, digite o primeiro número:";  
+read A1 
 
-echo "Por favor, digite o segundo número:";  # Exibe a frase na tela
-read A2  # Armazena o segundo número digitado pelo usuário na variável 'A2'
+echo "Por favor, digite o segundo número:";  
+read A2  
 
 
 # --------------------------------MENU DE SELECAO------------------------------ #
