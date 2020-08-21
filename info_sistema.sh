@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# |Arquivos de Configuração
+# Infomação do sistema no terminal
 #
 #  Email:      paulogcsouza86@hotmail.com
 #  Autor:      Paulo Souza                 Manutenção: Paulo Souza
@@ -26,8 +26,6 @@ RESPOSTA3=0
 echo "Você gostaria de informações sobre o sistema? [s/n] "
 read RESPOSTA0
 test "$RESPOSTA0" != "s" && exit
-
-# --------------------------------EXECUÇÂO--------------------------------- #
 
 echo -e "$CIANO Data e horário local:"
 date                                      #data local
