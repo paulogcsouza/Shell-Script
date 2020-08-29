@@ -9,6 +9,7 @@
 #  Histórico:
 #   v1.0 21/8/2020
 #   v1.3 25/8/2020
+#   v1.4 29/8/2020
 #   Testado em:
 #   bash 4.4.20(1)
 # -------------------------------VARIÀVEIS--------------------------------- #
@@ -18,6 +19,7 @@ CIANO="\033[36;1m"
 CINZA="\033[37;1m"
 AMARELO="\033[33;1m"
 AZUL="\033[34;1m"
+VAR=$(hostname)
 RESPOSTA0=0
 RESPOSTA1=0
 RESPOSTA2=0
@@ -28,6 +30,8 @@ RESPOSTA4=0
 echo "Você gostaria de informações sobre o sistema? [s/n] "
 read RESPOSTA0
 test "$RESPOSTA0" != "s" && exit
+
+echo -e "$AMARELO Nome do Usuários que esta rodando esse script é:$AZUL $VAR"
 
 echo -e "$CIANO Data e horário local:"
 date                                      #data local
